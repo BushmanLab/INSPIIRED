@@ -1,0 +1,58 @@
+CREATE TABLE "multihitlengths" (
+  "multihitID" int(11) ,
+  "length" int(11) ,
+  "count" int(11) ,
+  PRIMARY KEY ("multihitID","length")
+);
+CREATE TABLE "multihitpositions" (
+  "multihitID" int(11) ,
+  "sampleID" int(11) ,
+  "position" int(11) ,
+  "chr" varchar(255) ,
+  "strand" char(1) ,
+  PRIMARY KEY ("multihitID","position","chr","strand")
+);
+CREATE TABLE "pcrbreakpoints" (
+  "siteID" int(11) ,
+  "breakpoint" int(11) ,
+  "count" int(11) ,
+  PRIMARY KEY ("siteID","breakpoint")
+);
+CREATE TABLE "runinfo" (
+  "run_accession" int(10) DEFAULT NULL,
+  "rundate" varchar(255)  DEFAULT '',
+  "seqedby" varchar(255) DEFAULT NULL,
+  "runcomment" mediumtext,
+  "processed" tinyint(1) ,
+  "processcomment" mediumtext,
+  "uploaded" tinyint(1) ,
+  "archived" tinyint(1) ,
+  "miseqid" varchar(255)  DEFAULT '',
+  "archivepath" varchar(255)  DEFAULT '',
+  PRIMARY KEY ("rundate")
+);
+CREATE TABLE "samples" (
+  "sampleID" int(11) ,
+  "sampleName" varchar(255) ,
+  "refGenome" varchar(10) ,
+  "gender" char(1) ,
+  "miseqid" varchar(255) DEFAULT NULL,
+  PRIMARY KEY ("sampleID")
+);
+CREATE TABLE "sites" (
+  "siteID" int(11) ,
+  "sampleID" int(11) ,
+  "position" int(11) ,
+  "chr" varchar(255) ,
+  "strand" char(1) ,
+  PRIMARY KEY ("siteID")
+);
+CREATE TABLE "trialprimerltr" (
+  "trial" varchar(255)  DEFAULT '',
+  "primer" varchar(255)  DEFAULT '',
+  "ltrBit" varchar(255)  DEFAULT '',
+  "largeLTRFrag" varchar(255) DEFAULT NULL,
+  "VectorOrigin" varchar(255) DEFAULT '',
+  "VectorSeq" longtext,
+  PRIMARY KEY ("trial")
+);
