@@ -11,14 +11,6 @@
 #install_github('BushmanLab/intSiteRetriever')
 #install_github('BushmanLab/GCcontent')
 
-
-# Create the installation directory
-installDir <- paste0('.', '/INSPIIRED')
-if( is.na(file.info(installDir)$isdir)) dir.create(installDir)
-
-# Change into the installation directory
-setwd(installDir)
-
 # Download software repositories
 system("git clone -b qsub https://github.com/BushmanLab/intSiteCaller")
 system("git clone -b SQLite https://github.com/BushmanLab/intSiteUploader")
@@ -33,6 +25,7 @@ system("R CMD INSTALL pipeUtils_1.3.5.tar.gz")
 setwd("../EpigeneticHeatmapMaker")
 system("wget http://www.bushmanlab.org/assets/doc/INSPIIRED_EpigeneticData.tar")
 system("tar xvf INSPIIRED_EpigeneticData.tar")
+system("rm -f INSPIIRED_EpigeneticData.tar")
 
 setwd("../..")
 message('Setup complete')
