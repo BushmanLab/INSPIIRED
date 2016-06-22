@@ -1,0 +1,59 @@
+#### Identical run test
+
+This test is to see weather a run generated the same RData objects as those done at a previous time. This test is mostly useful when optimizing the code but not changing the results.
+
+This test checks the md5's of the RData files and also checks the attrition tables. Although the same RData files should give the same attition tables, testing both minimaizes the chance that we might miss something in one of them.
+
+The initial md5's and attition table should be generated only after careful inspection of the results manually. The md5s are saved in ```intSiteValidation.digest``` and the attition table is saved in ```intSiteValidation.attr```.
+
+To generate ```intSiteValidation.digest```, follow the commands
+```
+## check_rdata_md5 will generate intSiteValidation.digest if it not exist
+rm intSiteValidation.digest
+Rscript ~/intSiteCaller/check_rdata_md5.R
+```
+
+To compare with a previous run,
+```
+## check_rdata_md5 will compare with intSiteValidation.digest if it exist
+Rscript ~/intSiteCaller/check_rdata_md5.R
+```
+
+
+To generate ```intSiteValidation.attr```, follow the commands
+```
+Rscript ~/intSiteCaller/check_stats.R > intSiteValidation.attr
+```
+To compare with a previous run, follow the commands
+```
+Rscript ~/intSiteCaller/check_stats.R > newrun.attr
+diff newrun.attr intSiteValidation.attr
+```
+
+
+# Clone location from Sanger Sequencing
+
+in the table below 1 means `clone-1`
+in validation set we only have 1,2,3,4, 7
+
+coordinates are for hg18.
+
+Accuracy test should give +- 5 bases.
+
+Cell Line	Coordinates
+1	chr1+52699700
+2	chr17+77440127
+3	chr19+1330529
+4	chr1-153461600
+5	chrX+138815158
+5	chr9-110880267
+6	chr7+42268905
+6	chr12+131074662
+7	chr1+148889088
+8	chr2-193796348
+9	chr9+129882486
+9	chr19-10105414
+13	chr17-24291617
+13	chr8-42001438
+13	chr5-134729824
+13	chr19-2545093

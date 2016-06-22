@@ -1,0 +1,2 @@
+qualityThreshold	badQualityBases	qualitySlidingWindow	mingDNA	minPctIdent	maxAlignStart	maxFragLength	refGenome
+?	5	10	30	95	5	2500	hg18
