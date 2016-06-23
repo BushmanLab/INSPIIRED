@@ -30,7 +30,7 @@ setwd('../inputs')
 system("wget http://www.bushmanlab.org/assets/doc/INSPIIRED_demoDataSet.tar")
 system("tar xvf INSPIIRED_demoDataSet.tar")
 system("rm -f INSPIIRED_demoDataSet.tar")
-system("ln -s ../INSPIIRED.yml demoDataSet/INSPIIRED.yml")
+system("ln -s ../../INSPIIRED.yml demoDataSet/INSPIIRED.yml")
 
 setwd("../components/genomicHeatmapMaker")
 system("wget http://www.bushmanlab.org/assets/doc/pipeUtils_1.3.5.tar.gz")

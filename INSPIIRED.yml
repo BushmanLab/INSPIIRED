@@ -3,28 +3,20 @@ logFile : intSiteCaller.log
 
 
 # Database configuration
-UseMySQL : Yes
-SQLiteDBpath : /home/everett/software/intSiteCaller/intSites
-MySQLconnectionGroup :  intsites_miseq.read
+dataBase : sqlite
+sqliteIntSitesDB : ~/INSPIIRED/databases/SQLite/intSites.db
+sqliteSampleManagement : ~/INSPIIRED/databases/SQLite/specimenManagement.db
+mysqlConnectionGroup :  intsites_miseq.read
 
+# Allowed values: no, qsub, bsub 
+parallelize : qsub
 
 # Debug
 debug : Yes
 forceQsubPath : Yes
 
-
 # Run id
-runId : testRun
-
-
-# Parallelize the calculations with bsub or qsub
-parallelize : Yes
-
-
-# Parallelization scheduler. If bsub is set to No then qsub will be used by default.
-# This option will be ignored in parallelize is set to 'No'.
-bsub : No
-
+runId : demoRun
 
 # Maximum size for each sequence file chunk
 chunkSize : 30000
