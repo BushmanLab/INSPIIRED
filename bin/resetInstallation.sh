@@ -1,1 +1,1 @@
- rm -rf EpigeneticHeatmapMaker/ geneTherapyPatientReportMaker/ genomicHeatmapMaker/ intSiteCaller/ intSiteUploader/ input/demoDataSet/
+ rm -rf components/EpigeneticHeatmapMaker/ components/geneTherapyPatientReportMaker/ components/genomicHeatmapMaker/ components/intSiteCaller/ components/intSiteUploader/ input/demoDataSet/

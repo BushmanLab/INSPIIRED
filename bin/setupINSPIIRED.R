@@ -19,19 +19,19 @@ if (is.null(opt$noRsetup))
 }
 
 # Download software repositories
-
+setwd('components')
 system("git clone -b qsub https://github.com/BushmanLab/intSiteCaller")
 system("git clone -b SQLite https://github.com/BushmanLab/intSiteUploader")
 system("git clone -b sqlite https://github.com/BushmanLab/geneTherapyPatientReportMaker")
 system("git clone -b sqlite https://github.com/BushmanLab/genomicHeatmapMaker")
 system("git clone -b sqlite https://github.com/BushmanLab/EpigeneticHeatmapMaker")
 
-setwd('input')
+setwd('../inputs')
 system("wget http://www.bushmanlab.org/assets/doc/INSPIIRED_demoDataSet.tar")
 system("tar xvf INSPIIRED_demoDataSet.tar")
 system("rm -f INSPIIRED_demoDataSet.tar")
 
-setwd("../genomicHeatmapMaker")
+setwd("../components/genomicHeatmapMaker")
 system("wget http://www.bushmanlab.org/assets/doc/pipeUtils_1.3.5.tar.gz")
 system("R CMD INSTALL pipeUtils_1.3.5.tar.gz")
 
