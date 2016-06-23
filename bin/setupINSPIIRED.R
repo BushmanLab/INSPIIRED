@@ -1,6 +1,6 @@
 library('getopt');
 
-opt = getopt(c('noRsetup', 's', 0, "logical"))
+opt = getopt(c("noRsetup", 's', 0, "logical"))
 
 if (is.null(opt$noRsetup))
 {
@@ -19,6 +19,7 @@ if (is.null(opt$noRsetup))
 }
 
 # Download software repositories
+
 system("git clone -b qsub https://github.com/BushmanLab/intSiteCaller")
 system("git clone -b SQLite https://github.com/BushmanLab/intSiteUploader")
 system("git clone -b sqlite https://github.com/BushmanLab/geneTherapyPatientReportMaker")
