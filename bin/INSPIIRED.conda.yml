@@ -53,6 +53,7 @@ dependencies:
 - r-recommended=3.2.2=r3.2.2_0
 - r-rpart=4.1_10=r3.2.2_0a
 - r-spatial=7.3_11=r3.2.2_0a
+- r-stringi=1.0_1=r3.2.2_0a
 - r-survival=2.38_3=r3.2.2_0a
 - readline=6.2=2
 - setuptools=23.0.0=py27_0
@@ -60,6 +61,7 @@ dependencies:
 - sqlite=3.13.0=0
 - tk=8.5.18=0
 - wheel=0.29.0=py27_0
+- wkhtmltopdf=0.12.3=0
 - xz=5.2.2=0
 - zlib=1.2.8=3
 
