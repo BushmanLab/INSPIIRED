@@ -21,6 +21,9 @@ runId : demoRun
 # Maximum size for each sequence file chunk
 chunkSize : 30000
 
+# Epigenetic heat map data source
+epigeneticDataDirectory : ~/INSPIIRED/components/EpigeneticHeatmapMaker/Epigenetic
+
 
 # Log in to system hosting vector and sequencing data files
 remoteUser : everett@microb120.med.upenn.edu
