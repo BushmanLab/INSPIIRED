@@ -1,18 +1,22 @@
 ## INSPIIRED
 
-#### Set up Conda using the Bash shell
-#### While installing Conda, agree to the license and agree to allow the setup script to update your .bashrc file.
+##### Set up Conda using the Bash shell
+##### While installing Conda, agree to the license and agree to allow the setup script to update your .bashrc file.
+```
 %> wget https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh
 %> bash Miniconda2-latest-Linux-x86_64.sh
 %> source ~/.bashrc 
+```
 
-#### Setup up INSPIIRED
-####%> git clone https://github.com/BushmanLab/INSPIIRED
+##### Setup up INSPIIRED
+#####%> git clone https://github.com/BushmanLab/INSPIIRED
+```
 %> cd INSPIIRED
 %> conda env create -f bin/INSPIIRED.conda.yml
 %> source activate INSPIIRED
 %> export INSPIIRED=$(pwd)
 %> Rscript bin/setupINSPIIRED.R
+```
 
 # Identify integration sites
 %> cd inputs/demoDataSet
