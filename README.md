@@ -62,9 +62,11 @@ The heat map files will be outputted to a directory named epiHeatmap/.
 ```
 %> Rscript $INSPIIRED/components/EpigeneticHeatmapMaker/epi_heatmap_from_db.R -o epiHeatmap  demo.epi.csv
 ```
+<br>
+<br>
+<br>
 
-
-INSPIIRED configuration file:
+**INSPIIRED configuration file**
 ```
 # Log file path.
 # This file will be written to the analysis directory.
