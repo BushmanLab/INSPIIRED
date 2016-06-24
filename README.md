@@ -1,6 +1,7 @@
 ## INSPIIRED
 
 **Set up Conda using the Bash shell.**
+
 While installing Conda, agree to the license and agree to allow the setup script to update your .bashrc file.
 ```
 %> wget https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh
