@@ -37,7 +37,8 @@ The report will be outputted to the analysis directory with the file name format
 %> Rscript $INSPIIRED/components/geneTherapyPatientReportMaker/makeGeneTherapyPatientReport.R demo.csv
 ```
 
-**Convert report from HTML to PDF.**
+**Convert report from HTML to PDF.**  
+* Note that the report name in the example below contains the current time and will be different on your system.
 ```
 %> Rscript $INSPIIRED/components/geneTherapyPatientReportMaker/printReportToPdf.R SCIDn1.pP1.20160622.html
 ```
