@@ -38,7 +38,7 @@ The report will be outputted to the analysis directory with the file name format
 ```
 
 **Convert report from HTML to PDF.**  
-* Note that the report name in the example below contains the current time and will be different on your system.
+(!) Note that the report name in the example below contains the current time and will be different on your system.
 ```
 %> Rscript $INSPIIRED/components/geneTherapyPatientReportMaker/printReportToPdf.R SCIDn1.pP1.20160622.html
 ```
