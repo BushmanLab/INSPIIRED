@@ -1,11 +1,11 @@
 ## INSPIIRED
 
-**Below is an example of how to set up INSPIRRED on a 64-bit linux machine**  
+**Below is an example of how to set up INSPIRRED on a 64-bit Linux machine**  
 
 **Set up Conda.**  
 While installing Conda, agree to the license and agree to allow the setup script to update your .bashrc file.  
 If you are not using a 64-bit Linux machine then please visit http://conda.pydata.org/miniconda.html  
-and download the Python 2.x version of Conda for your machine.
+and download the appropriate Python 2.x version of Conda for your machine.
 ```
 %> wget https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh
 %> bash Miniconda2-latest-Linux-x86_64.sh
