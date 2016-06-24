@@ -15,7 +15,7 @@ and download the appropriate Python 2.x version of Conda for your machine.
 **Setup up INSPIIRED.**  
 Running the 'git clone' command below will begin the installation process in the same directory from which it is called.    
 INSPIIRED depends upon file paths defined in its INSPIIRED configuration file shown at the bottom of this page.  
-If you install INSPIIRED in a location other than your home directory then you **must update** the paths in this configureation file.
+If you install INSPIIRED in a location other than your home directory then you **must update** the paths in this configuration file.
 ````
 %> git clone https://github.com/BushmanLab/INSPIIRED
 %> cd INSPIIRED
