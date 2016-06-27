@@ -9,6 +9,8 @@ and download the appropriate Python 2.x version of Conda for your machine.
 ```
 %> wget https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh
 %> bash Miniconda2-latest-Linux-x86_64.sh
+%> conda config --add channels 'bioconda'  
+%> conda config --add channels 'r'  
 %> source ~/.bashrc
 ```
 
