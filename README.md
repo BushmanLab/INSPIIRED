@@ -1,13 +1,13 @@
 ## INSPIIRED
 
 INSPIIRED is a software suite designed to study viral integration sites and the longitudinal outcome of gene therapy patients.
-Each component of the INSPIIRED suite is available through GitHub. For detailed instructions on how to make use of each component, please visit each components repository:  
+Each component of the INSPIIRED suite is available through GitHub. For detailed instructions on how to make use of a component, please visit its repository:  
 
 [intSiteCaller](https://github.com/BushmanLab/intSiteCaller)  
 [intSiteUploader](https://github.com/BushmanLab/intSiteUploader)  
 [geneTherapyPatientReportMaker](https://github.com/BushmanLab/geneTherapyPatientReportMaker)  
 [genomicHeatmapMaker](https://github.com/BushmanLab/genomicHeatmapMaker)  
-[EpigeneticHeatmapMaker](https://github.com/BushmanLab/EpigeneticHeatmapMaker)  
+[epigeneticHeatmapMaker](https://github.com/BushmanLab/EpigeneticHeatmapMaker)  
 
 **Below is an example of how to set up INSPIRRED on a 64-bit Linux machine**  
 
