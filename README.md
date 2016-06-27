@@ -139,12 +139,13 @@ ProcessingParameters:
 <br>
 
 ####Known instalation issues.
-On some systems, the following errors may arise when setupINSPIIRED.R script when installing R libraries:  
-
-   awk: symbol lookup error: libreadline.so.6: undefined symbol: PC  
-
-   This can only be resolved by replacing the conda library with a system library resource, i.e.  
-      mv /home/everett/miniconda2/envs/INSPIIRED/lib/libreadline.so.6   /home/everett/miniconda2/envs/INSPIIRED/lib/__libreadline.so.6  
-      ln -s /lib/x86_64-linux-gnu/libreadline.so.6   /home/everett/miniconda2/envs/INSPIIRED/lib/libreadline.so.6  
-
-      Please note that the system level libreadline.so.6 library may be in a different locatin on your system.
+On some systems, the following errors may arise when setupINSPIIRED.R script when installing R libraries:
+```
+awk: symbol lookup error: libreadline.so.6: undefined symbol: PC  
+```
+This can only be resolved by replacing the conda library with a system library resource, i.e.
+```
+mv /home/everett/miniconda2/envs/INSPIIRED/lib/libreadline.so.6   /home/everett/miniconda2/envs/INSPIIRED/lib/__libreadline.so.6
+ln -s /lib/x86_64-linux-gnu/libreadline.so.6   /home/everett/miniconda2/envs/INSPIIRED/lib/libreadline.so.6  
+```
+Please note that the system level libreadline.so.6 library may be in a different locatin on your system.
