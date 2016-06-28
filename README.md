@@ -146,7 +146,7 @@ ProcessingParameters:
 <br>
 
 ####Known installation issues.
-On some systems, the following errors may arise when setupINSPIIRED.R script when installing R libraries:
+On some systems, the following error may arise with the setupINSPIIRED.R script when installing R libraries:
 ```
 awk: symbol lookup error: libreadline.so.6: undefined symbol: PC  
 ```
