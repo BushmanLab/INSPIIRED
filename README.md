@@ -85,7 +85,7 @@ The heat map files will be outputted to a directory named epiHeatmap/.
 ```
 <br>
 
-**INSPIIRED configuration file**
+**INSPIIRED configuration file:**
 ```
 # Log file path.
 # This file will be written to the analysis directory.
