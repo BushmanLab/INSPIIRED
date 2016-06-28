@@ -10,15 +10,15 @@ to make use of each component, please visit its repository:
 [genomicHeatmapMaker](https://github.com/BushmanLab/genomicHeatmapMaker)  
 [epigeneticHeatmapMaker](https://github.com/BushmanLab/EpigeneticHeatmapMaker)  
 
-INSPIRRED is designed to run in a Linux environment and is best suited to run on a computational cluster where its  
+INSPIIRED is designed to run in a Linux environment and is best suited to run on a computational cluster where its  
 memory requirements are proportional to the volume of data being processed. When using a computational cluster,  
-update INSPIRRED's configuration file to instruct it to use either the bsub or qsub job submission methods.  
+update INSPIIRED's configuration file to instruct it to use either the bsub or qsub job submission methods.  
 A single, multi-core computer may be used provided that qsub is installed in order to distribute INPIIRED's jobs  
 across its cores. Alternatively, a single core computer (or multi-core machine without qsub installed) may be used  
 by setting the configuration variable 'parallelize'  to 'no'.   
 
 
-**Below is an example of how to set up INSPIRRED on a 64-bit Linux machine**  
+**Below is an example of how to set up INSPIIRED on a 64-bit Linux machine**  
 
 **Set up Conda.**  
 While installing Conda, agree to the license and agree to allow the setup script to update your .bashrc file.  
