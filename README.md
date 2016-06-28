@@ -1,8 +1,8 @@
 ## INSPIIRED
 
 INSPIIRED is a software suite designed to study viral integration sites and the longitudinal outcome of gene therapy patients.
-Each component of the INSPIIRED software suite is available through GitHub. For detailed instructions on how to make use of each component,  
-please visit its repository:  
+Each component of the INSPIIRED software suite is available through GitHub. For detailed instructions on how to make use of  
+each component, please visit its repository:  
 
 [intSiteCaller](https://github.com/BushmanLab/intSiteCaller)  
 [intSiteUploader](https://github.com/BushmanLab/intSiteUploader)  
@@ -10,10 +10,12 @@ please visit its repository:
 [genomicHeatmapMaker](https://github.com/BushmanLab/genomicHeatmapMaker)  
 [epigeneticHeatmapMaker](https://github.com/BushmanLab/EpigeneticHeatmapMaker)  
 
-INSPIRRED is best suited to run on a computational cluster and its memory requirements are proportional to the volume of data being processed.  
-When using a computational cluster, update INSPIRRED's configuration file to instruct it to use either the bsub or qsub job submission methods.    
-A single multi-core computer may be used provided that qsub is installed in order to distribute INPIIRED's jobs across its cores.  
-Alternatively, single core computer (or multi-core machine without qsub installed) may be used by setting the configuration variable 'parallelize' to 'no'.   
+INSPIRRED is designed to run in a Linux environment and is best suited to run on a computational cluster and its memory  
+requirements are proportional to the volume of data being processed. When using a computational cluster, update INSPIRRED's  
+configuration file to instruct it to use either the bsub or qsub job submission methods. A single multi-core computer may  
+be used provided that qsub is installed in order to distribute INPIIRED's jobs across its cores. Alternatively, single core  
+computer (or multi-core machine without qsub installed) may be used by setting the configuration variable 'parallelize'  
+to 'no'.   
 
 
 **Below is an example of how to set up INSPIRRED on a 64-bit Linux machine**  
