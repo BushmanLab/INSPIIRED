@@ -14,7 +14,7 @@ INSPIRRED is designed to run in a Linux environment and is best suited to run on
 memory requirements are proportional to the volume of data being processed. When using a computational cluster,  
 update INSPIRRED's configuration file to instruct it to use either the bsub or qsub job submission methods.  
 A single, multi-core computer may be used provided that qsub is installed in order to distribute INPIIRED's jobs  
-across its cores. Alternatively, single core computer (or multi-core machine without qsub installed) may be used  
+across its cores. Alternatively, a single core computer (or multi-core machine without qsub installed) may be used  
 by setting the configuration variable 'parallelize'  to 'no'.   
 
 
