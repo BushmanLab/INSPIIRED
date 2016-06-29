@@ -27,16 +27,18 @@ and download the appropriate Python 2.x version of Conda for your machine.
 ```
 %> wget https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh
 %> bash Miniconda2-latest-Linux-x86_64.sh
+%> source ~/.bashrc
 %> conda config --add channels 'bioconda'  
 %> conda config --add channels 'r'  
-%> source ~/.bashrc
 ```
 
 **Setup up INSPIIRED.**  
 Running the 'git clone' command below will begin the installation process in the same directory from which it is called.    
 INSPIIRED depends upon file paths defined in its configuration file (INPIIRED.yml) shown at the bottom of this page.  
 If you install INSPIIRED in a location other than your home directory then you **must update** the paths in this configuration file.  
-At the bottom of this page are known installation problems and their solutions.
+At the bottom of this page are known installation problems and their solutions.  
+<br>
+The setup script installs / updates a number of R libraries and may take up to 10 minutes to execute.
 ````
 %> git clone https://github.com/BushmanLab/INSPIIRED
 %> cd INSPIIRED
