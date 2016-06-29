@@ -5,7 +5,7 @@ opt = getopt(c("noRsetup", 's', 0, "logical"))
 if (is.null(opt$noRsetup))
 {
    # R packages to be installed
-   r_packages <- c('Rcpp', 'dplyr', 'RMySQL', 'RSQLite', 'optparse', 'yaml', 'igraph', 'argparse', 'devtools', 'knitr', 'vegan', 'sonicLength', 'reldist', 'PubMedWordcloud', 'vcd', 'RSVGTipsDevice')
+   r_packages <- c('Rcpp', 'dplyr', 'RMySQL', 'RSQLite', 'optparse', 'yaml', 'igraph', 'argparse', 'devtools', 'knitr', 'vegan', 'sonicLength', 'reldist', 'PubMedWordcloud', 'vcd', 'RSVGTipsDevice', 'gridExtra')
 
    install.packages(r_packages, repos='http://cran.us.r-project.org')
 
@@ -21,10 +21,10 @@ if (is.null(opt$noRsetup))
 # Download software repositories
 setwd('components')
 system("git clone -b qsub https://github.com/BushmanLab/intSiteCaller")
-system("git clone -b SQLite https://github.com/BushmanLab/intSiteUploader")
-system("git clone -b sqlite https://github.com/BushmanLab/geneTherapyPatientReportMaker")
-system("git clone -b sqlite https://github.com/BushmanLab/genomicHeatmapMaker")
-system("git clone -b sqlite https://github.com/BushmanLab/EpigeneticHeatmapMaker")
+system("git clone https://github.com/BushmanLab/intSiteUploader")
+system("git clone -b sqlite-sample-managment https://github.com/BushmanLab/geneTherapyPatientReportMaker")
+system("git clone https://github.com/BushmanLab/genomicHeatmapMaker")
+system("git clone https://github.com/BushmanLab/EpigeneticHeatmapMaker")
 
 setwd('../inputs')
 system("wget http://www.bushmanlab.org/assets/doc/INSPIIRED_demoDataSet.tar")
