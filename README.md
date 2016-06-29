@@ -33,13 +33,14 @@ The setup script installs / updates a number of R libraries and may take up to 1
 %> export INSPIIRED=$(pwd)
 %> Rscript bin/setupINSPIIRED.R
 ```
-**Set up INSPIIRED without privledges..**  
+**Set up INSPIIRED without privledges.**  
 The setup script (setupINSPIIRED.R) installs and updates a number of R libraries required to run INSPIIRED.  
 INSPIIRED also requires a number of Python libraries to run, most notable is BioPython. If you do not have the 
 ability to install BioPython then you may want to work within a Conda environment that provides this resource.  
 While installing Conda, agree to the license and agree to allow the setup script to update your .bashrc file.  
 If you are not using a 64-bit Linux machine then please visit http://conda.pydata.org/miniconda.html  
-and download the appropriate Python 2.x version of Conda for your machine.  
+and download the appropriate Python 2.x version of Conda for your machine.  It is important to note that 
+working within a Conda environment is not compatible with a number of computation cluster setups.
 ```
 %> wget https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh
 %> bash Miniconda2-latest-Linux-x86_64.sh
