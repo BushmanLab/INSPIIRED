@@ -20,6 +20,18 @@ by setting the configuration variable 'parallelize'  to 'no'.
 
 **Below is an example of how to set up INSPIIRED on a 64-bit Linux machine**  
 
+**Set up Conda.**  
+While installing Conda, agree to the license and agree to allow the setup script to update your .bashrc file.  
+If you are not using a 64-bit Linux machine then please visit http://conda.pydata.org/miniconda.html  
+and download the appropriate Python 2.x version of Conda for your machine. 
+```
+%> wget https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh
+%> bash Miniconda2-latest-Linux-x86_64.sh
+%> source ~/.bashrc
+%> conda config --add channels 'bioconda'  
+%> conda config --add channels 'r'  
+```
+
 **Setup up INSPIIRED.**  
 Running the 'git clone' command below will begin the installation process in the same directory from which it is called.    
 INSPIIRED depends upon file paths defined in its configuration file (INPIIRED.yml) shown at the bottom of this page.  
@@ -31,24 +43,9 @@ The setup script installs / updates a number of R libraries and may take up to 1
 %> git clone https://github.com/BushmanLab/INSPIIRED
 %> cd INSPIIRED
 %> export INSPIIRED=$(pwd)
-%> Rscript bin/setupINSPIIRED.R
-```
-**Set up INSPIIRED without privledges.**  
-The setup script (setupINSPIIRED.R) installs and updates a number of R libraries required to run INSPIIRED.  
-INSPIIRED also requires a number of Python libraries to run, most notable is BioPython. If you do not have the 
-ability to install BioPython then you may want to work within a Conda environment that provides this resource.  
-While installing Conda, agree to the license and agree to allow the setup script to update your .bashrc file.  
-If you are not using a 64-bit Linux machine then please visit http://conda.pydata.org/miniconda.html  
-and download the appropriate Python 2.x version of Conda for your machine.  It is important to note that 
-working within a Conda environment is not compatible with a number of computation cluster setups.
-```
-%> wget https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh
-%> bash Miniconda2-latest-Linux-x86_64.sh
-%> source ~/.bashrc
-%> conda config --add channels 'bioconda'  
-%> conda config --add channels 'r'  
 %> conda env create -f bin/INSPIIRED.conda.yml
 %> source activate INSPIIRED
+%> Rscript bin/setupINSPIIRED.R
 ```
 
 **Identify integration sites.**
