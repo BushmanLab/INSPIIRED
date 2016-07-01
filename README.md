@@ -38,7 +38,7 @@ INSPIIRED depends upon file paths defined in its configuration file (INPIIRED.ym
 If you install INSPIIRED in a location other than your home directory then you **must update** the paths in this configuration file.  
 At the bottom of this page are known installation problems and their solutions.  
 <br>
-The setup script installs / updates a number of R libraries and may take up to 10 minutes to execute.
+The setup script installs / updates a number of R libraries and may take up to 10 minutes to execute.  
 ````
 %> git clone https://github.com/BushmanLab/INSPIIRED
 %> cd INSPIIRED
