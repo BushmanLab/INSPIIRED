@@ -1,4 +1,4 @@
-#    This source code file is a component of the large INSPIIRED genomic analysis software package.
+#    This source code file is a component of the larger INSPIIRED genomic analysis software package.
 #    Copyright (C) 2016 Frederic Bushman
 #
 #    This program is free software: you can redistribute it and/or modify
