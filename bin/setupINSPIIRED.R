@@ -13,7 +13,7 @@
 #
 #    You should have received a copy of the GNU General Public License
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-#
+
 library('getopt');
 
 opt = getopt(c("noRsetup", 's', 0, "logical"))
@@ -32,11 +32,12 @@ if (is.null(opt$noRsetup))
    library('devtools')
    install_github('BushmanLab/intSiteRetriever')
    install_github('BushmanLab/GCcontent')
+   install_github('BushmanLab/hotROCs')
 }
 
 # Download software repositories
 setwd('components')
-system("git clone -b qsub https://github.com/BushmanLab/intSiteCaller")
+system("git clone https://github.com/BushmanLab/intSiteCaller")
 system("git clone https://github.com/BushmanLab/intSiteUploader")
 system("git clone -b sqlite-sample-managment https://github.com/BushmanLab/geneTherapyPatientReportMaker")
 system("git clone https://github.com/BushmanLab/genomicHeatmapMaker")
@@ -49,8 +50,6 @@ system("rm -f INSPIIRED_demoDataSet.tar")
 system("ln -s ../../INSPIIRED.yml demoDataSet/INSPIIRED.yml")
 
 setwd("../components/genomicHeatmapMaker")
-system("wget http://www.bushmanlab.org/assets/doc/pipeUtils_1.3.5.tar.gz")
-system("R CMD INSTALL pipeUtils_1.3.5.tar.gz")
 
 setwd("../EpigeneticHeatmapMaker")
 system("wget http://www.bushmanlab.org/assets/doc/INSPIIRED_EpigeneticData.tar")
