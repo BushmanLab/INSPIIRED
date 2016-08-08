@@ -25,6 +25,7 @@ dataBase : sqlite
 sqliteIntSitesDB : ~/INSPIIRED/databases/SQLite/intSites.db
 sqliteSampleManagement : ~/INSPIIRED/databases/SQLite/specimenManagement.db
 mysqlConnectionGroup :  intsites_miseq.read
+mysqlSpecimenManagementGroup : specimen_management
 
 # The parallelize parameter instructs INSPIRRED how to distribute jobs over the available processors.
 # Allowed values are: no, qsub, bsub
