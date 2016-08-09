@@ -61,7 +61,7 @@ The data will be uploaded to a SQLite database defined in the INSPIIRED.yml conf
 %> Rscript $INSPIIRED/components/intSiteUploader/intSiteUploader.R
 ```
 
-**Create a sample management database.**
+**Create a sample management database.**  
 The patient report and genomic heat map creators depend on a second sample management data base.
 This database contains details about where samples originate from and how they were prepared.
 The INSPIIRED software package includes an empty SQLite sample management data base which
