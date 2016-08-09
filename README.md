@@ -61,11 +61,21 @@ The data will be uploaded to a SQLite database defined in the INSPIIRED.yml conf
 %> Rscript $INSPIIRED/components/intSiteUploader/intSiteUploader.R
 ```
 
+**Create a sample management database.**
+The patient report and genomic heat map creators depend on a second sample management data base.
+This database contains details about where samples originate from and how they were prepared.
+The INSPIIRED software package includes an empty SQLite sample management data base which
+can be populated with a csv formatted data file.
+```
+%> Rscript $INSPIIRED/bin/uploadSampleData.R ../../databases/SQLite/specimenManagement.db sampleData.csv
+```
+
 **Create HTML patient report.**  
 The report will be outputted to the analysis directory with the file name format (project).(patient id).(date).html
 ```
 %> Rscript $INSPIIRED/components/geneTherapyPatientReportMaker/makeGeneTherapyPatientReport.R demo.csv
 ```
+
 
 **Convert report from HTML to PDF.**  
 (!) Note that the report name in the example below contains the current time and will be different on your system.
