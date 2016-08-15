@@ -44,7 +44,7 @@ system("git clone https://github.com/BushmanLab/genomicHeatmapMaker")
 system("git clone https://github.com/BushmanLab/EpigeneticHeatmapMaker")
 
 setwd('../inputs')
-system("wget http://www.bushmanlab.org/assets/doc/INSPIIRED_demoDataSet.tar")
+system("wget http://www.bushmanlab.org/assets/doc/INSPIIRED/INSPIIRED_demoDataSet.tar")
 system("tar xvf INSPIIRED_demoDataSet.tar")
 system("rm -f INSPIIRED_demoDataSet.tar")
 system("ln -s ../../INSPIIRED.yml demoDataSet/INSPIIRED.yml")
@@ -52,7 +52,7 @@ system("ln -s ../../INSPIIRED.yml demoDataSet/INSPIIRED.yml")
 setwd("../components/genomicHeatmapMaker")
 
 setwd("../EpigeneticHeatmapMaker")
-system("wget http://www.bushmanlab.org/assets/doc/INSPIIRED_EpigeneticData.tar")
+system("wget http://www.bushmanlab.org/assets/doc/INSPIIRED/INSPIIRED_EpigeneticData.tar")
 system("tar xvf INSPIIRED_EpigeneticData.tar")
 system("rm -f INSPIIRED_EpigeneticData.tar")
 
