@@ -18,7 +18,7 @@ across its cores. Alternatively, a single core computer (or multi-core machine w
 by setting the configuration variable 'parallelize'  to 'no'.   
 
 The INSPIIRED pipeline is available as both a Linux virtual machine and as a Conda supported software suite.
-The virtual machine is available [here](http://www.bushmanlab.org/assets/doc/INSPIIRED/INSPIIRED.ova) (17GB).  
+The virtual machine is available [here](http://www.bushmanlab.org/assets/doc/INSPIIRED/INSPIIRED.ova.gz) (17GB).  
 
 
 **Below is an example of how to set up INSPIIRED on a 64-bit Linux machine*
