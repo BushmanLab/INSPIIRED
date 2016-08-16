@@ -17,8 +17,11 @@ A single, multi-core computer may be used provided that qsub is installed in ord
 across its cores. Alternatively, a single core computer (or multi-core machine without qsub installed) may be used  
 by setting the configuration variable 'parallelize'  to 'no'.   
 
+The INSPIIRED pipeline is available as both a Linux virtual machine and as a Conda supported software suite.
+The virtual machine is available [here](http://www.bushmanlab.org/assets/doc/INSPIIRED.ova) (17GB).  
 
-**Below is an example of how to set up INSPIIRED on a 64-bit Linux machine**  
+
+**Below is an example of how to set up INSPIIRED on a 64-bit Linux machine*
 
 **Set up Conda.**  
 While installing Conda, agree to the license and agree to allow the setup script to update your .bashrc file.  
