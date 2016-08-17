@@ -48,6 +48,9 @@ chunkSize : 30000
 # Epigenetic heat map data source
 epigeneticDataDirectory : ~/INSPIIRED/components/EpigeneticHeatmapMaker/Epigenetic
 
+# Heatmap ROC parameters
+rocControls : unmatched
+
 # Log in to system hosting vector and sequencing data files
 remoteUser : everett@microb120.med.upenn.edu
 
