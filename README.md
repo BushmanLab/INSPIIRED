@@ -19,6 +19,10 @@ by setting the configuration variable 'parallelize'  to 'no'.
 
 The INSPIIRED pipeline is available as both a Linux **virtual machine** and as a Conda supported software suite.
 The virtual machine is available [here](http://www.bushmanlab.org/assets/doc/INSPIIRED/INSPIIRED.ova.gz) (17GB).  
+We recommend the free virtualbox software (http://www.virtualbox.org)  to install and run the virtual machine.  
+The virtual machine has a single user account 'inspiired' using the password 'inspiired1'. The INSPIIRED software  
+can be found in the inspiired user's home directory. In order to run the demo data set, 16GB of memory should be  
+allocated to the virtual machine.
 
 
 **Below is an example of how to set up INSPIIRED on a 64-bit Linux machine**
