@@ -55,7 +55,7 @@ rocControls : unmatched
 remoteUser : everett@microb120.med.upenn.edu
 
 # Directory that holds the vector information file defiled in the vectorSeq column of the provided sampleInfo.csv file
-vectorDataPath : .
+vectorDataPath : ~/INSPIIRED/inputs/demoDataSet
 
 # Directory that holds the R1, R2, and I1 sequencing run gzipped FASTQ files.
 # Defined paths should be absolute or relative to the analysis directory.
