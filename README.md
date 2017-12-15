@@ -99,7 +99,7 @@ The heat map and associated files are all SVG (Scalable Vector Graphics) files w
 **Create a epigenic heat map.**  
 The heat map files will be outputted to a directory named epiHeatmap/.
 ```
-%> Rscript $INSPIIRED/components/EpigeneticHeatmapMaker/epi_heatmap_from_db.R -o epiHeatmap  demo.epi.csv
+%> Rscript $INSPIIRED/components/EpigeneticHeatmapMaker/epi_heatmap_from_db.R -t ../epiCellTypes -o epiHeatmap  demo.epi.csv
 ```
 <br>
 
