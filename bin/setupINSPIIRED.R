@@ -34,6 +34,7 @@ if (is.null(opt$noRsetup))
 
 # Download software repositories
 setwd('components')
+system("git clone https://github.com/BushmanLab/intSiteUploader")
 system("git clone -b intSiteCaller-deployment https://github.com/BushmanLab/intSiteCaller")
 system("git clone -b geneTherapyPatientReportMaker-deployment https://github.com/BushmanLab/geneTherapyPatientReportMaker")
 system("git clone -b genomicHeatmapMaker-deployment https://github.com/BushmanLab/genomicHeatmapMaker")
