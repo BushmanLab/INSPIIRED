@@ -33,8 +33,8 @@ While installing Conda, agree to the license and agree to allow the setup script
 If you are not using a 64-bit Linux machine then please visit http://conda.pydata.org/miniconda.html  
 and download the appropriate Python 2.x version of Conda for your machine. 
 ```
-%> wget https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh
-%> bash Miniconda2-latest-Linux-x86_64.sh
+%> wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
+%> bash Miniconda3-latest-Linux-x86_64.sh
 %> source ~/.bashrc
 %> conda config --add channels 'bioconda'  
 %> conda config --add channels 'r'  
