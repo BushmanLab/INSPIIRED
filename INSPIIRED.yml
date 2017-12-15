@@ -31,8 +31,8 @@ mysqlSpecimenManagementGroup : specimen_management
 # Allowed values are: no, qsub, bsub
 # If 'no' is selected then all jobs will be ran serially. 
 # If using qsub on a single, multi-core machine, then set the forceQsubPath to 'Yes'.
-parallelize : qsub
-forceQsubPath : Yes
+parallelize : bsub
+forceQsubPath : No
 
 # Debuging
 # If this parameter is set to Yes than a number of intermediate temp files will be retained. 
