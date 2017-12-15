@@ -52,7 +52,7 @@ The setup script installs / updates a number of R libraries and may take up to 1
 %> cd INSPIIRED
 %> export INSPIIRED=$(pwd)
 %> conda env create -f bin/INSPIIRED.conda.yml
-%> source activate INSPIIRED
+%> source activate INSPIIREDv2
 %> Rscript bin/setupINSPIIRED.R
 ```
 
