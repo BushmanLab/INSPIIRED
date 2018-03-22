@@ -1,0 +1,11 @@
+library(devtools)
+install_version("reldist", version = "1.6-2", repos = "http://cran.us.r-project.org")
+install_version("sonicLength", version = "1.4.4", repos = "http://cran.us.r-project.org")
+install_version("vcd", version = "1.4-0", repos = "http://cran.us.r-project.org")  # lattice MASS
+install_version("RSVGTipsDevice", version = "1.0-4", repos = "http://cran.us.r-project.org")
+install_version("getopt", version = "1.20.0", repos = "http://cran.us.r-project.org")
+install_version("optparse", version = "1.3.2", repos = "http://cran.us.r-project.org")
+install_version("argparse", version = "1.0.1", repos = "http://cran.us.r-project.org")
+source("http://bioconductor.org/biocLite.R")
+biocLite()
+biocLite(c('hiAnnotator', 'BSgenome.Hsapiens.UCSC.hg18', 'BSgenome.Mmusculus.UCSC.mm9'), suppressUpdates=TRUE, ask=FALSE)
