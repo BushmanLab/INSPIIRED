@@ -45,12 +45,14 @@ If you install INSPIIRED in a location other than your home directory then you *
 At the bottom of this page are known installation problems and their solutions.  
 <br>
 The setup script installs / updates a number of R libraries and may take up to 10 minutes to execute.  
-````
+```
 %> git clone -b INSPIIRED-deployment https://github.com/BushmanLab/INSPIIRED
 %> cd INSPIIRED
 %> export INSPIIRED=$(pwd)
+%> ~/miniconda3/bin/conda update conda
 %> ~/miniconda3/bin/conda env create -f bin/INSPIIRED.conda.yml
 %> source ~/miniconda3/bin/activate INSPIIREDv2
+%> Rscript bin/setupR.R
 %> Rscript bin/setupINSPIIRED.R
 ```
 
